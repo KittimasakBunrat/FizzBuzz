@@ -29,9 +29,5 @@ namespace FizzBuzz.Pages
             FizzBuzzList = _fizzBizz.GenerateFizzBuzz(IsDivisibleByFour, IsDivisibleByNine, ReverseOrder);
         }
 
-        public void OnGet()
-        {
-
-        }
     }
 }
