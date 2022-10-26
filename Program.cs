@@ -1,7 +1,10 @@
+using FizzBuzz.Business;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<IFizzBuzz, FizzBuzz.Business.FizzBuzz>();
 
 var app = builder.Build();
 
