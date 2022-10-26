@@ -1,10 +1,37 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "FizzBuzz";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="text-center" style="height: 100%">
+    <h1 class="display-4">FizzBuzz!</h1>
+
+    <div style="display: grid">
+
+        <div>
+            <form method="post" asp-page-handler="GenerateFizzBuzz">
+                <div>
+                    <input id="four" asp-for="IsDivisibleByFour">
+                    <label for="four">Fuzz når tallet er delelig med 4</label>
+                </div>
+                <div>
+                    <input id="nine" asp-for="IsDivisibleByNine">
+                    <label for="nine">Fuzz når tallet er delelig med 9</label>
+                </div>
+                <div>
+                    <input id="nine" asp-for="ReverseOrder">
+                    <label for="reverse">Reverser utlistningen</label>
+                </div>
+                <button>Generer fizz buzz</button>
+            </form>
+        </div>
+        <div style="max-height: 450px; overflow-y: auto;">
+            @foreach (var word in Model.FizzBuzzList)
+                {
+                    <p>@word</p>
+                }
+        </div>
+    </div>
 </div>
