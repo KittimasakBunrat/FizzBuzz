@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz.csproj", "{461FC906-3D6A-4E4A-AB21-48313913F32B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz.Web", "FizzBuzz.Web.csproj", "{461FC906-3D6A-4E4A-AB21-48313913F32B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Business", "..\FizzBuzz.Business\FizzBuzz.Business.csproj", "{809BA49C-CEED-4182-A9AE-5B7E31F01BE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz.Business", "..\FizzBuzz.Business\FizzBuzz.Business.csproj", "{809BA49C-CEED-4182-A9AE-5B7E31F01BE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Business.Tests", "..\FizzBuzz.Business.Tests\FizzBuzz.Business.Tests.csproj", "{97085AC9-2F06-4AC1-9CE5-AD64DCA8A69C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz.Business.Tests", "..\FizzBuzz.Business.Tests\FizzBuzz.Business.Tests.csproj", "{97085AC9-2F06-4AC1-9CE5-AD64DCA8A69C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{809BA49C-CEED-4182-A9AE-5B7E31F01BE3} = {809BA49C-CEED-4182-A9AE-5B7E31F01BE3}
 	EndProjectSection
